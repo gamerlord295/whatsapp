@@ -1,0 +1,100 @@
+:root {
+  background-color: rgba(252, 245, 235);
+  color: #fff;
+  font-family: "Helvetica Neue", "Helvetica Neue", "Helvetica", Arial,
+    sans-serif;
+}
+
+.header {
+  padding: 0 30px;
+  margin-top: 20px;
+  position: relative;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.headerImg {
+  width: 100%;
+  height: 700px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  object-fit: cover;
+}
+
+.headerContent {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: calc(100% - 70px);
+  height: 400px;
+    padding: 0 40px;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+}
+
+.chatContent,
+.like,
+.chat {
+  width: 300px;
+}
+
+.like {
+  margin-top: -25px;
+}
+
+.coffee {
+  width: 350px;
+}
+
+.text {
+  width: 350px;
+}
+
+.text h1 {
+  line-height: 50px;
+}
+
+.headerContent p {
+  margin: 50px 0;
+}
+
+.downloadButton {
+  margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+  .coffee {
+    width: 300px;
+  }
+  .headerContent {
+    padding: 0;
+    left: 50%;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+  .headerContent {
+    width: 300px;
+  }
+
+  .text h1,
+  .text p {
+    padding: 0 30px;
+  }
+  .text a .downloadDiv {
+    margin-left: 50px;
+  }
+}

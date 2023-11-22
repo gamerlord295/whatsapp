@@ -1,0 +1,51 @@
+.socialButton {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 1px solid white;
+    background-color: #1c1e21;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 1s;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.socialButton svg {
+    color: white;
+    z-index: 1;
+    transition: 1s;
+}
+
+.socialButton::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    width: 48px;
+    border-radius: 100%;
+    background-color: #25d366;
+    height: 48px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.socialButton:hover svg {
+    color: black;
+}
+
+.socialButton:hover {
+    border: none;
+}
+
+.socialButton:hover::after {
+    bottom: 0;
+}

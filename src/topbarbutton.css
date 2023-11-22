@@ -1,0 +1,33 @@
+.buttons button {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    font-size:medium;
+}
+
+.buttons button::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #25d366;
+    top: 20px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.buttons button:hover::before {
+    width: calc(100% - 10px);
+}
+
+.buttons button img {
+    height: 15px;
+}

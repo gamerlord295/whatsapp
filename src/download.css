@@ -1,0 +1,89 @@
+.downloadDiv {
+  width: fit-content;
+  width: -moz-fit-content;
+  position: relative;
+  background-color: #25d366;
+  padding: 15px 25px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  overflow: hidden;
+  cursor: pointer;
+  color: black;
+  z-index: 0;
+}
+
+a span,
+.downloadDiv svg {
+  position: relative;
+  z-index: 1;
+}
+
+.downloadDiv svg {
+  width: 12px;
+  margin-left: 10px;
+}
+
+.downloadDiv::after {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 150px;
+  border-radius: 100px 100px 50px 50px;
+  background-color: white;
+  left: -30px;
+  bottom: -200px;
+  transition: 1.5s;
+  -webkit-border-radius: 100px 100px 50px 50px;
+  -moz-border-radius: 100px 100px 50px 50px;
+  -ms-border-radius: 100px 100px 50px 50px;
+  -o-border-radius: 100px 100px 50px 50px;
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -ms-transition: 1.5s;
+  -o-transition: 1.5s;
+}
+
+.downloadDiv:hover::after {
+  bottom: -50px;
+}
+
+@media (max-width: 1150px) {
+    .topbar .downloadDiv svg {
+        margin: 0;
+        height: 12px;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+}
+
+    .topbar .downloadButton {
+      width: 34px;
+      height: 34px;
+    }
+
+    .topbar .downloadDiv {
+        display: flex;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .topbar .downloadDiv::after {
+        left: -32px;
+        width: 100px;
+      }
+
+      .topbar .downloadButton:hover svg {
+        fill: white;
+      }
+
+    .topbar .downloadDiv::after{
+      background-color: black;
+    }
+}

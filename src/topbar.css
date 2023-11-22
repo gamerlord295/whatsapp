@@ -1,0 +1,54 @@
+.topbar {
+    position: sticky;
+    padding: 25px 35px;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100vw - 70px);
+    align-items: center;
+    top: 0;
+    background:rgba(252, 245, 235, .8);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 2;
+}
+
+.lines {
+    display: none;
+    height: 34px;
+    width: 34px;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.downloadButton {
+    margin: 0;
+}
+
+.downloadButton div {
+    border: solid 1px black;
+}
+
+img {
+    width: 130px;
+    object-fit: contain;
+}
+
+
+
+@media (max-width: 1150px) {
+    .buttons {
+        display: none;
+    }
+
+    .topbar .downloadButton span{
+        display: none;
+    }
+
+    .lines {
+        display: block;
+    }
+}
